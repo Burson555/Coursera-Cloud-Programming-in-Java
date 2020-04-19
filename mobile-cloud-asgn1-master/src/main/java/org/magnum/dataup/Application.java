@@ -25,16 +25,20 @@ import org.springframework.boot.context.embedded.MultiPartConfigFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 // This annotation tells Spring to auto-wire your application
 @EnableAutoConfiguration
 // This annotation tells Spring to look for controllers, etc.
 // starting in the current package
 @ComponentScan
-//This annotation tells Spring that this class contains configuration
-//information
-//for the application.
+// This annotation tells Spring that this class contains configuration
+// information
+// for the application.
 @Configuration
+// This annotation tells Spring to turn on WebMvc, enabling the 
+// DispacherServlet that route requests to controllers
+@EnableWebMvc
 public class Application {
 
 	private static final String MAX_REQUEST_SIZE = "150MB";
