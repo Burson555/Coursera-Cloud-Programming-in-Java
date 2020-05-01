@@ -86,6 +86,14 @@ public class Video {
 	public long getLikes() {
 		return likes;
 	}
+
+	public void addLike() {
+		this.likes += 1L;
+	}
+
+	public void removeLike() {
+		this.likes -= 1L;
+	}
 	
 	public void setLikes(long likes) {
 		this.likes = likes;
