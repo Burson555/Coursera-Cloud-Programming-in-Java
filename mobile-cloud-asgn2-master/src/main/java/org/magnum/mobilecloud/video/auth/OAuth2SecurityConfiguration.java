@@ -45,6 +45,8 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
  *  and certificate signed by a CA. This current version is highly insecure.
  *  
  */
+//Tell Spring that this object represents a Configuration for the
+//application
 @Configuration
 public class OAuth2SecurityConfiguration {
 

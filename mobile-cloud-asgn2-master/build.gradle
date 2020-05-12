@@ -71,4 +71,4 @@ task wrapper2(type: Wrapper) {
     gradleVersion = '5.0'
 }
 
-mainClassName = 'src.main.java.org.magnum.dataup.Application'
+mainClassName = 'src.main.java.org.magnum.mobilecloud.video.Application'

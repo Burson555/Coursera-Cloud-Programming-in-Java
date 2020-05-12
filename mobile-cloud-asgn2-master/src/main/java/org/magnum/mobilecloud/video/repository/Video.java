@@ -87,11 +87,11 @@ public class Video {
 		return likes;
 	}
 
-	public void addLike() {
+	public synchronized void addLike() {
 		this.likes += 1L;
 	}
 
-	public void removeLike() {
+	public synchronized void removeLike() {
 		this.likes -= 1L;
 	}
 	
