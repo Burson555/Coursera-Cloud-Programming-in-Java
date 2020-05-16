@@ -1,0 +1,1 @@
+mongoimport --host mflix-shard-0/mflix-shard-00-00-x8ykc.mongodb.net:27017,mflix-shard-00-01-x8ykc.mongodb.net:27017,mflix-shard-00-02-x8ykc.mongodb.net:27017 --ssl --username boss --password admin --authenticationDatabase admin --db mflix --collection movies_initial --type csv --file movies_initial.csv --headerline
